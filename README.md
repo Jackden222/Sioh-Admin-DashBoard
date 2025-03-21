@@ -1,54 +1,104 @@
-# React + TypeScript + Vite
+# Admin Dashboard Sioh
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive admin dashboard built with React, TypeScript, and Chakra UI. This project provides a comprehensive solution for managing business operations with a beautiful and intuitive interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨 Modern and Clean UI Design
+- 🌓 Dark/Light Mode Support
+- 📱 Fully Responsive Layout
+- 📊 Interactive Charts and Analytics
+- 🔒 Secure Authentication
+- ⚡ Fast Performance
+- 🎭 Smooth Animations
+- 📝 Comprehensive Documentation
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Framework:** React 18
+- **Language:** TypeScript
+- **Build Tool:** Vite
+- **UI Library:** Chakra UI
+- **Charts:** Recharts
+- **Animations:** Framer Motion
+- **Icons:** React Icons
+- **Styling:** Emotion
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Jackden222/Sioh-Admin-DashBoard.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Navigate to the project directory:
+```bash
+cd admin-dashboard-sioh
 ```
+
+3. Install dependencies:
+```bash
+npm install
+
+```
+
+4. Start the development server:
+```bash
+npm run dev
+
+```
+
+5. Open your browser and visit `http://localhost:5173`
+
+## Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── pages/         # Page components
+├── layouts/       # Layout components
+├── hooks/         # Custom React hooks
+├── utils/         # Utility functions
+├── assets/        # Static assets
+└── types/         # TypeScript type definitions
+```
+
+## Available Pages
+
+- **Dashboard:** Overview of key metrics and statistics
+- **Statistics:** Detailed analytics and data visualization
+- **Products:** Product management and inventory
+- **Orders:** Order tracking and management
+- **Messages:** Communication center
+- **Settings:** User preferences and account settings
+- **Security:** Security settings and activity monitoring
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Chakra UI](https://chakra-ui.com/) for the beautiful component library
+- [Recharts](https://recharts.org/) for the charting library
+- [Framer Motion](https://www.framer.com/motion/) for animations
+- [React Icons](https://react-icons.github.io/react-icons/) for icons
+
+## Support
+
+For support, email support@example.com or create an issue in the repository.
